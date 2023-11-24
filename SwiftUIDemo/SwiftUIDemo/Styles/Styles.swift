@@ -10,6 +10,7 @@ import SwiftUI
 struct StrokeStyle: ViewModifier {
     var cornerRadius: CGFloat
     
+    //底部阴影
     @Environment(\.colorScheme) var colorScheme
     func body(content: Content) -> some View {
         content.overlay(

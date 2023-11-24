@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC2030872B105158004A830A /* ScrollPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2030862B105158004A830A /* ScrollPreferenceKey.swift */; };
+		BC2030892B107248004A830A /* AnimationFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2030882B107248004A830A /* AnimationFontModifier.swift */; };
 		BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */; };
 		BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */; };
 		BC9545E52B0EFDE8005C15C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9545E42B0EFDE8005C15C1 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC2030862B105158004A830A /* ScrollPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPreferenceKey.swift; sourceTree = "<group>"; };
+		BC2030882B107248004A830A /* AnimationFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFontModifier.swift; sourceTree = "<group>"; };
 		BC9545DD2B0EFDE6005C15C1 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				BC95464D2B0F687D005C15C1 /* TabItem.swift */,
+				BC2030862B105158004A830A /* ScrollPreferenceKey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				BC9545EE2B0F2C2A005C15C1 /* Styles.swift */,
+				BC2030882B107248004A830A /* AnimationFontModifier.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 			files = (
 				BC9546502B0F7DDA005C15C1 /* HomeView.swift in Sources */,
 				BC95464A2B0F61B8005C15C1 /* Tabbar.swift in Sources */,
+				BC2030892B107248004A830A /* AnimationFontModifier.swift in Sources */,
 				BC9545F12B0F2F5E005C15C1 /* AccountView.swift in Sources */,
 				BC9546422B0F4C94005C15C1 /* HexagonView.swift in Sources */,
 				BC9545EF2B0F2C2A005C15C1 /* Styles.swift in Sources */,
@@ -215,6 +222,7 @@
 				BC95464E2B0F687D005C15C1 /* TabItem.swift in Sources */,
 				BC9546582B0F89C8005C15C1 /* FeaturedItem.swift in Sources */,
 				BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */,
+				BC2030872B105158004A830A /* ScrollPreferenceKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
