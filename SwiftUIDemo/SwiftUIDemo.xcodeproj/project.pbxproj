@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC2030872B105158004A830A /* ScrollPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2030862B105158004A830A /* ScrollPreferenceKey.swift */; };
 		BC2030892B107248004A830A /* AnimationFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2030882B107248004A830A /* AnimationFontModifier.swift */; };
+		BC20308B2B107594004A830A /* FeaturCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20308A2B107594004A830A /* FeaturCourse.swift */; };
 		BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */; };
 		BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */; };
 		BC9545E52B0EFDE8005C15C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9545E42B0EFDE8005C15C1 /* Assets.xcassets */; };
@@ -22,11 +23,15 @@
 		BC9546502B0F7DDA005C15C1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95464F2B0F7DDA005C15C1 /* HomeView.swift */; };
 		BC9546582B0F89C8005C15C1 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9546572B0F89C8005C15C1 /* FeaturedItem.swift */; };
 		BC95465A2B0F8B4E005C15C1 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9546592B0F8B4E005C15C1 /* NavigationBar.swift */; };
+		BCEE89642B1484C100DAFB97 /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE89632B1484C100DAFB97 /* MatchedView.swift */; };
+		BCFAF92F2B1741D700D29B05 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF92E2B1741D700D29B05 /* CourseItem.swift */; };
+		BCFAF9312B17437E00D29B05 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF9302B17437E00D29B05 /* CourseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC2030862B105158004A830A /* ScrollPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPreferenceKey.swift; sourceTree = "<group>"; };
 		BC2030882B107248004A830A /* AnimationFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFontModifier.swift; sourceTree = "<group>"; };
+		BC20308A2B107594004A830A /* FeaturCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturCourse.swift; sourceTree = "<group>"; };
 		BC9545DD2B0EFDE6005C15C1 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +46,9 @@
 		BC95464F2B0F7DDA005C15C1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BC9546572B0F89C8005C15C1 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 		BC9546592B0F8B4E005C15C1 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		BCEE89632B1484C100DAFB97 /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
+		BCFAF92E2B1741D700D29B05 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		BCFAF9302B17437E00D29B05 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				BC95464F2B0F7DDA005C15C1 /* HomeView.swift */,
+				BCEE89632B1484C100DAFB97 /* MatchedView.swift */,
 				BC9545F02B0F2F5E005C15C1 /* AccountView.swift */,
+				BCFAF9302B17437E00D29B05 /* CourseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +118,7 @@
 				BC9546432B0F4FE5005C15C1 /* BlobView.swift */,
 				BC9546412B0F4C94005C15C1 /* HexagonView.swift */,
 				BC9546572B0F89C8005C15C1 /* FeaturedItem.swift */,
+				BCFAF92E2B1741D700D29B05 /* CourseItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -117,6 +128,7 @@
 			children = (
 				BC95464D2B0F687D005C15C1 /* TabItem.swift */,
 				BC2030862B105158004A830A /* ScrollPreferenceKey.swift */,
+				BC20308A2B107594004A830A /* FeaturCourse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,15 +224,19 @@
 			files = (
 				BC9546502B0F7DDA005C15C1 /* HomeView.swift in Sources */,
 				BC95464A2B0F61B8005C15C1 /* Tabbar.swift in Sources */,
+				BCFAF9312B17437E00D29B05 /* CourseView.swift in Sources */,
 				BC2030892B107248004A830A /* AnimationFontModifier.swift in Sources */,
 				BC9545F12B0F2F5E005C15C1 /* AccountView.swift in Sources */,
+				BCEE89642B1484C100DAFB97 /* MatchedView.swift in Sources */,
 				BC9546422B0F4C94005C15C1 /* HexagonView.swift in Sources */,
 				BC9545EF2B0F2C2A005C15C1 /* Styles.swift in Sources */,
 				BC95465A2B0F8B4E005C15C1 /* NavigationBar.swift in Sources */,
 				BC9546442B0F4FE5005C15C1 /* BlobView.swift in Sources */,
 				BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */,
 				BC95464E2B0F687D005C15C1 /* TabItem.swift in Sources */,
+				BCFAF92F2B1741D700D29B05 /* CourseItem.swift in Sources */,
 				BC9546582B0F89C8005C15C1 /* FeaturedItem.swift in Sources */,
+				BC20308B2B107594004A830A /* FeaturCourse.swift in Sources */,
 				BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */,
 				BC2030872B105158004A830A /* ScrollPreferenceKey.swift in Sources */,
 			);
