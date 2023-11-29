@@ -27,6 +27,7 @@
 		BCFAF92F2B1741D700D29B05 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF92E2B1741D700D29B05 /* CourseItem.swift */; };
 		BCFAF9312B17437E00D29B05 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF9302B17437E00D29B05 /* CourseView.swift */; };
 		BCFAF9332B1749C400D29B05 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF9322B1749C400D29B05 /* Animation.swift */; };
+		BCFAF9352B175D6B00D29B05 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF9342B175D6B00D29B05 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		BCFAF92E2B1741D700D29B05 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		BCFAF9302B17437E00D29B05 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		BCFAF9322B1749C400D29B05 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		BCFAF9342B175D6B00D29B05 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				BC9545EE2B0F2C2A005C15C1 /* Styles.swift */,
 				BC2030882B107248004A830A /* AnimationFontModifier.swift */,
 				BCFAF9322B1749C400D29B05 /* Animation.swift */,
+				BCFAF9342B175D6B00D29B05 /* Model.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				BC9546582B0F89C8005C15C1 /* FeaturedItem.swift in Sources */,
 				BC20308B2B107594004A830A /* FeaturCourse.swift in Sources */,
 				BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */,
+				BCFAF9352B175D6B00D29B05 /* Model.swift in Sources */,
 				BCFAF9332B1749C400D29B05 /* Animation.swift in Sources */,
 				BC2030872B105158004A830A /* ScrollPreferenceKey.swift in Sources */,
 			);
