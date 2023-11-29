@@ -13,22 +13,26 @@ struct Tabbar: View {
     @State var tabItemWidth: CGFloat = 0
     
     var body: some View {
-        HStack {
-            buttonItems
+        GeometryReader { proxy in
+            let hasHomeIndicator = proxy.safeAreaInsets.bottom > 20
+            
+            HStack {
+                buttonItems
+            }
+            .padding(.horizontal, 8)
+            .padding(.top, 14)
+            .frame(height: hasHomeIndicator ? 88 : 62, alignment: .top)
+            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: hasHomeIndicator ? 34 : 0, style: .continuous))
+            .background(//点击背景
+                tabbarBackground
+            )
+            .overlay(//线
+                tabbarLine
+            )
+            .strokeStyle(cornerRadius: hasHomeIndicator ? 34 : 0)
+            .frame(maxHeight: .infinity, alignment: .bottom)
+            .ignoresSafeArea()
         }
-        .padding(.horizontal, 8)
-        .padding(.top, 14)
-        .frame(height: 88, alignment: .top)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 34, style: .continuous))
-        .background(//点击背景
-            tabbarBackground
-        )
-        .overlay(//线
-            tabbarLine
-        )
-        .strokeStyle(cornerRadius: 34)
-        .frame(maxHeight: .infinity, alignment: .bottom)
-        .ignoresSafeArea()
     }
     
     //按钮列表

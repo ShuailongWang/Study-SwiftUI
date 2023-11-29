@@ -39,12 +39,15 @@ struct HomeView: View {
                     .padding(.horizontal, 20)
                 
                 //底部区域
-                if !show {
-                    cards
-                } else {
-                    //占位空间
-                    details
+                LazyVGrid (columns: [GridItem(.adaptive(minimum: 300), spacing: 20)], spacing: 20) {
+                    if !show {
+                        cards
+                    } else {
+                        //占位空间
+                        details
+                    }
                 }
+                .padding(.horizontal, 20)
             }
             .coordinateSpace(name: "scroll") //坐标空间名称
             .safeAreaInset(edge: .top, content: {
@@ -110,6 +113,8 @@ struct HomeView: View {
                     let minX = proxy.frame(in: .global).minX
                     
                     FeaturedItem(itemModel: item)
+                        .frame(maxWidth: 500)
+                        .frame(maxWidth:.infinity)
                         .padding(.vertical, 40)
                         .rotation3DEffect(.degrees(minX / -10), axis: (x:0, y:1, z: 0))
                         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x:0, y:10)
