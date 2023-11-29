@@ -56,69 +56,43 @@ struct CourseView: View {
     }
     
     var coverView: some View {
-        VStack () {
-            Spacer()
-        }
-        .frame(maxWidth: .infinity)
-        .frame(height: 500)
-        .padding(20)
-        .foregroundStyle(.black)
-        .background(
-            Image(itemModel.image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .matchedGeometryEffect(id: "image\(itemModel.id)", in: namespace)
-        )
-        .background(
-            Image(itemModel.backround)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .matchedGeometryEffect(id: "background\(itemModel.id)", in: namespace)
-        )
-        .mask (
-            RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .matchedGeometryEffect(id: "mask\(itemModel.id)", in: namespace)
-        )
-        .overlay(
-            VStack (alignment: .leading, spacing: 12) {
-                Text(itemModel.title)
-                    .font(.largeTitle.weight(.bold))
-                    .matchedGeometryEffect(id: "title\(itemModel.id)", in: namespace)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                Text(itemModel.subtitle.uppercased())
-                    .font(.footnote.weight(.semibold))
-                    .matchedGeometryEffect(id: "subtitle\(itemModel.id)", in: namespace)
-                Text(itemModel.text
-                )
-                    .font(.footnote)
-                    .matchedGeometryEffect(id: "text\(itemModel.id)", in: namespace)
-                
-                Divider()
-                    .opacity(appear[0] ? 1 : 0)
-                
-                HStack {
-                    Image("Avatar Default")
-                        .resizable()
-                        .frame(width: 26, height: 26)
-                        .cornerRadius(10)
-                        .padding(8)
-                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-                        .strokeStyle(cornerRadius: 18)
-                    Text("Taught by Meng To")
-                        .font(.footnote)
-                }
-                .opacity(appear[1] ? 1 : 0)
+        GeometryReader { proxy in
+            let scrollY = proxy.frame(in: .global).minY
+            
+            VStack () {
+                Spacer()
             }
+            .frame(maxWidth: .infinity)
+            .frame(height: 500 + (scrollY > 0 ? scrollY : 0))
             .padding(20)
+            .foregroundStyle(.black)
             .background(
-                Rectangle()
-                    .fill(.ultraThinMaterial)
-                    .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                    .matchedGeometryEffect(id: "blur\(itemModel.id)", in: namespace)
+                Image(itemModel.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .matchedGeometryEffect(id: "image\(itemModel.id)", in: namespace)
+                    .offset(y: scrollY > 0 ? scrollY * -0.8 : 0)
             )
-            .offset(y: 250)
-            .padding(20)
-        )
+            .background(
+                Image(itemModel.backround)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .matchedGeometryEffect(id: "background\(itemModel.id)", in: namespace)
+                    .offset(y:scrollY > 0 ? -scrollY : 0)
+                    .scaleEffect(scrollY > 0 ? scrollY / 1000 + 1 : 1)
+                    .blur(radius: scrollY / 10)
+            )
+            .mask (
+                RoundedRectangle(cornerRadius: 30, style: .continuous)
+                    .matchedGeometryEffect(id: "mask\(itemModel.id)", in: namespace)
+                    .offset(y: scrollY > 0 ? -scrollY : 0)
+            )
+            .overlay(
+                overlayContent
+                    .offset(y: scrollY > 0 ? scrollY * -0.6 : 0)
+            )
+        }
+        .frame(height: 500)
     }
     
     var contentView: some View {
@@ -153,6 +127,47 @@ struct CourseView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
         .padding(20)
         .ignoresSafeArea()
+    }
+    
+    var overlayContent: some View {
+        VStack (alignment: .leading, spacing: 12) {
+            Text(itemModel.title)
+                .font(.largeTitle.weight(.bold))
+                .matchedGeometryEffect(id: "title\(itemModel.id)", in: namespace)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            Text(itemModel.subtitle.uppercased())
+                .font(.footnote.weight(.semibold))
+                .matchedGeometryEffect(id: "subtitle\(itemModel.id)", in: namespace)
+            Text(itemModel.text
+            )
+                .font(.footnote)
+                .matchedGeometryEffect(id: "text\(itemModel.id)", in: namespace)
+            
+            Divider()
+                .opacity(appear[0] ? 1 : 0)
+            
+            HStack {
+                Image("Avatar Default")
+                    .resizable()
+                    .frame(width: 26, height: 26)
+                    .cornerRadius(10)
+                    .padding(8)
+                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                    .strokeStyle(cornerRadius: 18)
+                Text("Taught by Meng To")
+                    .font(.footnote)
+            }
+            .opacity(appear[1] ? 1 : 0)
+        }
+        .padding(20)
+        .background(
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                .matchedGeometryEffect(id: "blur\(itemModel.id)", in: namespace)
+        )
+        .offset(y: 250)
+        .padding(20)
     }
 }
 
