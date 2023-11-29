@@ -13,6 +13,8 @@ struct CourseView: View {
     @Binding var show: Bool
     @State var appear = [false, false, false]
     @EnvironmentObject var model: Model
+    @State var viewState: CGSize = .zero
+    @State var isDraggable = true
     
     var body: some View {
         ZStack {
@@ -25,6 +27,14 @@ struct CourseView: View {
                     .opacity(appear[2] ? 1 : 0)
             }
             .background(Color("Background"))
+            .mask(RoundedRectangle(cornerRadius: viewState.width / 3, style:.continuous))
+            .shadow(color: .black.opacity(0.3), radius: 30, x: 0, y: 10)
+            .scaleEffect(viewState.width / -500 + 1)
+            .background(.black.opacity(viewState.width / 500))
+            .background(.ultraThinMaterial)
+            .gesture ( //拖拽
+                isDraggable ? drag : nil
+            )
             .ignoresSafeArea()
             
             closeButton
@@ -53,6 +63,43 @@ struct CourseView: View {
         appear[0] = false
         appear[1] = false
         appear[2] = false
+    }
+    
+    func close() {
+        withAnimation(.closeCard) {
+            show.toggle()
+            model.showDetail.toggle()
+        }
+        
+        withAnimation(.closeCard) {
+            viewState = .zero
+        }
+        isDraggable = false
+    }
+    
+    var drag: some Gesture {
+        DragGesture(minimumDistance: 30, coordinateSpace: .local).onChanged {value in
+            guard value.translation.width > 0 else { return }
+            
+            if value.startLocation.x < 100 {
+                withAnimation(.closeCard) {
+                    viewState = value.translation
+                }
+            }
+            
+            if viewState.width > 120 {
+                close()
+            }
+        }
+        .onEnded({ value in
+            if viewState.width > 80 {
+                close()
+            } else {
+                withAnimation(.closeCard) {
+                    viewState = .zero
+                }
+            }
+        })
     }
     
     var coverView: some View {
