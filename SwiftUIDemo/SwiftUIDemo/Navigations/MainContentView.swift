@@ -36,27 +36,8 @@ struct MainContentView: View {
                 .offset(y: model.showDetail ? 200 : 0)
             
             if showModal {
-                ZStack {
-                    Color.clear.background(.regularMaterial)
-                        .ignoresSafeArea()
-                    
-                    SignUpView()
-                    
-                    Button {
-                        withAnimation {
-                            showModal = false
-                        }
-                    } label: {
-                        Image(systemName: "xmark")
-                            .font(.body.weight(.bold))
-                            .foregroundColor(.secondary)
-                            .padding(8)
-                        .background(.ultraThinMaterial, in: Circle())
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    .padding(20)
-                }
-                .zIndex(1)
+                ModalView()
+                    .zIndex(1)
             }
         }
         .safeAreaInset(edge: .bottom) {

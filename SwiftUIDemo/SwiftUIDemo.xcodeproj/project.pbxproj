@@ -13,6 +13,8 @@
 		BC30AC572B18734100A79346 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC562B18734100A79346 /* SignUpView.swift */; };
 		BC30AC592B1877E000A79346 /* AngularButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC582B1877E000A79346 /* AngularButtonStyle.swift */; };
 		BC30AC5B2B18882300A79346 /* InputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC5A2B18882300A79346 /* InputStyle.swift */; };
+		BC30AC5D2B18B1DF00A79346 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC5C2B18B1DF00A79346 /* ModalView.swift */; };
+		BC30AC5F2B18B24900A79346 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC5E2B18B24900A79346 /* SignInView.swift */; };
 		BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */; };
 		BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */; };
 		BC9545E52B0EFDE8005C15C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9545E42B0EFDE8005C15C1 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 		BC30AC562B18734100A79346 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		BC30AC582B1877E000A79346 /* AngularButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButtonStyle.swift; sourceTree = "<group>"; };
 		BC30AC5A2B18882300A79346 /* InputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStyle.swift; sourceTree = "<group>"; };
+		BC30AC5C2B18B1DF00A79346 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		BC30AC5E2B18B24900A79346 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		BC9545DD2B0EFDE6005C15C1 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC30AC612B18B62F00A79346 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				BC30AC562B18734100A79346 /* SignUpView.swift */,
+				BC30AC5E2B18B24900A79346 /* SignInView.swift */,
+				BC30AC5C2B18B1DF00A79346 /* ModalView.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
 		BC9545D42B0EFDE6005C15C1 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +137,7 @@
 				BC9545F02B0F2F5E005C15C1 /* AccountView.swift */,
 				BCFAF9302B17437E00D29B05 /* CourseView.swift */,
 				BCFAF9362B1828A000D29B05 /* SearchView.swift */,
-				BC30AC562B18734100A79346 /* SignUpView.swift */,
+				BC30AC612B18B62F00A79346 /* Modals */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,6 +269,7 @@
 				BC9545EF2B0F2C2A005C15C1 /* Styles.swift in Sources */,
 				BC30AC592B1877E000A79346 /* AngularButtonStyle.swift in Sources */,
 				BC95465A2B0F8B4E005C15C1 /* NavigationBar.swift in Sources */,
+				BC30AC5F2B18B24900A79346 /* SignInView.swift in Sources */,
 				BC9546442B0F4FE5005C15C1 /* BlobView.swift in Sources */,
 				BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */,
 				BC95464E2B0F687D005C15C1 /* TabItem.swift in Sources */,
@@ -267,6 +282,7 @@
 				BCFAF9352B175D6B00D29B05 /* Model.swift in Sources */,
 				BCFAF9332B1749C400D29B05 /* Animation.swift in Sources */,
 				BC2030872B105158004A830A /* ScrollPreferenceKey.swift in Sources */,
+				BC30AC5D2B18B1DF00A79346 /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
