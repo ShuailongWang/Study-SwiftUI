@@ -17,6 +17,8 @@ struct HomeView: View {
     @State var show = false
     @State var showStatusBar = true
     @State var selectedID = UUID()
+    @State var showCourse = false
+    @State var selectIndex = 0
     @EnvironmentObject var model: Model
     
     var body: some View {
@@ -108,7 +110,7 @@ struct HomeView: View {
     //列表
     var tableView: some View {
         TabView {
-            ForEach (homeCourseArray) { item in
+            ForEach (Array(homeCourseArray.enumerated()), id:\.offset) { index, item in
                 GeometryReader { proxy in
                     let minX = proxy.frame(in: .global).minX
                     
@@ -127,6 +129,10 @@ struct HomeView: View {
                                 .offset(x: 32, y: -80)
                                 .offset(x: minX)
                         )
+                        .onTapGesture {
+                            showCourse = true
+                            selectIndex = index
+                        }
                 }
             }
         }
@@ -136,6 +142,9 @@ struct HomeView: View {
             Image("Blob 1")
                 .offset(x: 250, y: -100)
         )
+        .sheet(isPresented: $showCourse) {
+            CourseView(namespace: namespace, itemModel: homeCourseArray[selectIndex], show: $showCourse)
+        }
     }
     
     var cards: some View {

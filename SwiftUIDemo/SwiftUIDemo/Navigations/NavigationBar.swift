@@ -10,6 +10,9 @@ import SwiftUI
 struct NavigationBar: View {
     var title = ""
     @Binding var hasScrolled: Bool
+    @State var showSearch = false
+    @State var showAccount = false
+    @AppStorage("ShowModal") var showModal = false
     
     var body: some View {
         ZStack {
@@ -28,20 +31,39 @@ struct NavigationBar: View {
             
             //图标
             HStack (spacing: 8) {
-                Image(systemName: "magnifyingglass")
-                    .animatableFont(size: hasScrolled ? 22 : 34)
-                    .frame(width: 36, height: 36)
-                    .foregroundColor(.secondary)
-                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                //搜索
+                Button {
+                    showSearch = true
+                } label: {
+                    Image(systemName: "magnifyingglass")
+                        .animatableFont(size: hasScrolled ? 22 : 22)
+                        .frame(width: 36, height: 36)
+                        .foregroundColor(.secondary)
+                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
                     .strokeStyle(cornerRadius: 14)
+                }
+                .sheet(isPresented: $showSearch) {
+                    SearchView()
+                }
                 
-                Image("Avatar Default")
-                    .resizable()
-                    .frame(width: 26, height: 26)
-                    .cornerRadius(10)
-                    .padding(8)
-                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                //个人
+                Button {
+                    //showAccount = true
+                    withAnimation {
+                        showModal = true
+                    }
+                } label: {
+                    Image("Avatar Default")
+                        .resizable()
+                        .frame(width: 26, height: 26)
+                        .cornerRadius(10)
+                        .padding(8)
+                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
                     .strokeStyle(cornerRadius: 18)
+                }
+                .sheet(isPresented: $showAccount) {
+                    AccountView()
+                }
             }
             .frame(maxWidth: .infinity, alignment: .trailing)
             .padding(.trailing, 20)

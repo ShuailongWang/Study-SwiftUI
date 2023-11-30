@@ -10,6 +10,9 @@
 		BC2030872B105158004A830A /* ScrollPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2030862B105158004A830A /* ScrollPreferenceKey.swift */; };
 		BC2030892B107248004A830A /* AnimationFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2030882B107248004A830A /* AnimationFontModifier.swift */; };
 		BC20308B2B107594004A830A /* FeaturCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20308A2B107594004A830A /* FeaturCourse.swift */; };
+		BC30AC572B18734100A79346 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC562B18734100A79346 /* SignUpView.swift */; };
+		BC30AC592B1877E000A79346 /* AngularButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC582B1877E000A79346 /* AngularButtonStyle.swift */; };
+		BC30AC5B2B18882300A79346 /* InputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC5A2B18882300A79346 /* InputStyle.swift */; };
 		BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */; };
 		BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */; };
 		BC9545E52B0EFDE8005C15C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9545E42B0EFDE8005C15C1 /* Assets.xcassets */; };
@@ -28,12 +31,17 @@
 		BCFAF9312B17437E00D29B05 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF9302B17437E00D29B05 /* CourseView.swift */; };
 		BCFAF9332B1749C400D29B05 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF9322B1749C400D29B05 /* Animation.swift */; };
 		BCFAF9352B175D6B00D29B05 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF9342B175D6B00D29B05 /* Model.swift */; };
+		BCFAF9372B1828A000D29B05 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF9362B1828A000D29B05 /* SearchView.swift */; };
+		BCFAF9392B182DCD00D29B05 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF9382B182DCD00D29B05 /* Suggestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC2030862B105158004A830A /* ScrollPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPreferenceKey.swift; sourceTree = "<group>"; };
 		BC2030882B107248004A830A /* AnimationFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFontModifier.swift; sourceTree = "<group>"; };
 		BC20308A2B107594004A830A /* FeaturCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturCourse.swift; sourceTree = "<group>"; };
+		BC30AC562B18734100A79346 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		BC30AC582B1877E000A79346 /* AngularButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButtonStyle.swift; sourceTree = "<group>"; };
+		BC30AC5A2B18882300A79346 /* InputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStyle.swift; sourceTree = "<group>"; };
 		BC9545DD2B0EFDE6005C15C1 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +61,8 @@
 		BCFAF9302B17437E00D29B05 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		BCFAF9322B1749C400D29B05 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		BCFAF9342B175D6B00D29B05 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BCFAF9362B1828A000D29B05 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		BCFAF9382B182DCD00D29B05 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +122,8 @@
 				BCEE89632B1484C100DAFB97 /* MatchedView.swift */,
 				BC9545F02B0F2F5E005C15C1 /* AccountView.swift */,
 				BCFAF9302B17437E00D29B05 /* CourseView.swift */,
+				BCFAF9362B1828A000D29B05 /* SearchView.swift */,
+				BC30AC562B18734100A79346 /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,6 +145,7 @@
 				BC95464D2B0F687D005C15C1 /* TabItem.swift */,
 				BC2030862B105158004A830A /* ScrollPreferenceKey.swift */,
 				BC20308A2B107594004A830A /* FeaturCourse.swift */,
+				BCFAF9382B182DCD00D29B05 /* Suggestion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +157,8 @@
 				BC2030882B107248004A830A /* AnimationFontModifier.swift */,
 				BCFAF9322B1749C400D29B05 /* Animation.swift */,
 				BCFAF9342B175D6B00D29B05 /* Model.swift */,
+				BC30AC582B1877E000A79346 /* AngularButtonStyle.swift */,
+				BC30AC5A2B18882300A79346 /* InputStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -228,22 +243,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFAF9372B1828A000D29B05 /* SearchView.swift in Sources */,
 				BC9546502B0F7DDA005C15C1 /* HomeView.swift in Sources */,
 				BC95464A2B0F61B8005C15C1 /* Tabbar.swift in Sources */,
 				BCFAF9312B17437E00D29B05 /* CourseView.swift in Sources */,
 				BC2030892B107248004A830A /* AnimationFontModifier.swift in Sources */,
+				BCFAF9392B182DCD00D29B05 /* Suggestion.swift in Sources */,
 				BC9545F12B0F2F5E005C15C1 /* AccountView.swift in Sources */,
 				BCEE89642B1484C100DAFB97 /* MatchedView.swift in Sources */,
 				BC9546422B0F4C94005C15C1 /* HexagonView.swift in Sources */,
 				BC9545EF2B0F2C2A005C15C1 /* Styles.swift in Sources */,
+				BC30AC592B1877E000A79346 /* AngularButtonStyle.swift in Sources */,
 				BC95465A2B0F8B4E005C15C1 /* NavigationBar.swift in Sources */,
 				BC9546442B0F4FE5005C15C1 /* BlobView.swift in Sources */,
 				BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */,
 				BC95464E2B0F687D005C15C1 /* TabItem.swift in Sources */,
 				BCFAF92F2B1741D700D29B05 /* CourseItem.swift in Sources */,
 				BC9546582B0F89C8005C15C1 /* FeaturedItem.swift in Sources */,
+				BC30AC572B18734100A79346 /* SignUpView.swift in Sources */,
 				BC20308B2B107594004A830A /* FeaturCourse.swift in Sources */,
 				BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */,
+				BC30AC5B2B18882300A79346 /* InputStyle.swift in Sources */,
 				BCFAF9352B175D6B00D29B05 /* Model.swift in Sources */,
 				BCFAF9332B1749C400D29B05 /* Animation.swift in Sources */,
 				BC2030872B105158004A830A /* ScrollPreferenceKey.swift in Sources */,
