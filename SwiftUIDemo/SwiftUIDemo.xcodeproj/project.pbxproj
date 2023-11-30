@@ -15,6 +15,7 @@
 		BC30AC5B2B18882300A79346 /* InputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC5A2B18882300A79346 /* InputStyle.swift */; };
 		BC30AC5D2B18B1DF00A79346 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC5C2B18B1DF00A79346 /* ModalView.swift */; };
 		BC30AC5F2B18B24900A79346 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC5E2B18B24900A79346 /* SignInView.swift */; };
+		BC30AC632B18B9DF00A79346 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC622B18B9DF00A79346 /* AvatarView.swift */; };
 		BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */; };
 		BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */; };
 		BC9545E52B0EFDE8005C15C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9545E42B0EFDE8005C15C1 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		BC30AC5A2B18882300A79346 /* InputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStyle.swift; sourceTree = "<group>"; };
 		BC30AC5C2B18B1DF00A79346 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		BC30AC5E2B18B24900A79346 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		BC30AC622B18B9DF00A79346 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		BC9545DD2B0EFDE6005C15C1 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				BC9546412B0F4C94005C15C1 /* HexagonView.swift */,
 				BC9546572B0F89C8005C15C1 /* FeaturedItem.swift */,
 				BCFAF92E2B1741D700D29B05 /* CourseItem.swift */,
+				BC30AC622B18B9DF00A79346 /* AvatarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				BC2030892B107248004A830A /* AnimationFontModifier.swift in Sources */,
 				BCFAF9392B182DCD00D29B05 /* Suggestion.swift in Sources */,
 				BC9545F12B0F2F5E005C15C1 /* AccountView.swift in Sources */,
+				BC30AC632B18B9DF00A79346 /* AvatarView.swift in Sources */,
 				BCEE89642B1484C100DAFB97 /* MatchedView.swift in Sources */,
 				BC9546422B0F4C94005C15C1 /* HexagonView.swift in Sources */,
 				BC9545EF2B0F2C2A005C15C1 /* Styles.swift in Sources */,
