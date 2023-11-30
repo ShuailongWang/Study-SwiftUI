@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ModalView: View {
     @EnvironmentObject var model: Model
-    @AppStorage("showModal") var showModal = true
+    @AppStorage("ShowModal") var showModal = true
     @State var viewState: CGSize = .zero
     @State var isDismissed = false
     @State var appear = [false, false, false]
