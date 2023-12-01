@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FeaturedItem: View {
     var itemModel: FeaturCourseModel = homeCourseArray[0]
+    @Environment(\.sizeCategory) var sizeCategory
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
@@ -31,13 +32,15 @@ struct FeaturedItem: View {
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing)
                 )
+                .lineLimit(1)
+                .dynamicTypeSize(.large)
             Text(itemModel.subtitle.uppercased())
                 .font(.footnote)
                 .fontWeight(.regular)
                 .foregroundStyle(.secondary)
             Text(itemModel.text)
                 .multilineTextAlignment(.leading)
-                .lineLimit(2)
+                .lineLimit(sizeCategory > .large ? 1 : 2)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .foregroundColor(.secondary)
         }

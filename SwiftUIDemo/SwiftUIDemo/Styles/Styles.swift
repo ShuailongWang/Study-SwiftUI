@@ -38,8 +38,22 @@ struct StrokeModifier: ViewModifier {
     }
 }
 
+struct TitleModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.footnote.weight(.semibold))
+            .foregroundStyle(.secondary)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(20)
+    }
+}
+
 extension View {
     func strokeStyle(cornerRadius: CGFloat = 30) -> some View {
         modifier(StrokeModifier(cornerRadius: cornerRadius))
+    }
+    
+    func titleStyle() -> some View {
+        modifier(TitleModifier())
     }
 }
