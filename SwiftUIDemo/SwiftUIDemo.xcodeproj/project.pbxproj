@@ -16,6 +16,8 @@
 		BC30AC5D2B18B1DF00A79346 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC5C2B18B1DF00A79346 /* ModalView.swift */; };
 		BC30AC5F2B18B24900A79346 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC5E2B18B24900A79346 /* SignInView.swift */; };
 		BC30AC632B18B9DF00A79346 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC622B18B9DF00A79346 /* AvatarView.swift */; };
+		BC30AC652B19936E00A79346 /* Adress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC642B19936E00A79346 /* Adress.swift */; };
+		BC30AC672B19AC2600A79346 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC662B19AC2600A79346 /* Coin.swift */; };
 		BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */; };
 		BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */; };
 		BC9545E52B0EFDE8005C15C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9545E42B0EFDE8005C15C1 /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		BC30AC5C2B18B1DF00A79346 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		BC30AC5E2B18B24900A79346 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		BC30AC622B18B9DF00A79346 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		BC30AC642B19936E00A79346 /* Adress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adress.swift; sourceTree = "<group>"; };
+		BC30AC662B19AC2600A79346 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		BC9545DD2B0EFDE6005C15C1 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				BC2030862B105158004A830A /* ScrollPreferenceKey.swift */,
 				BC20308A2B107594004A830A /* FeaturCourse.swift */,
 				BCFAF9382B182DCD00D29B05 /* Suggestion.swift */,
+				BC30AC642B19936E00A79346 /* Adress.swift */,
+				BC30AC662B19AC2600A79346 /* Coin.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -275,8 +281,10 @@
 				BC95465A2B0F8B4E005C15C1 /* NavigationBar.swift in Sources */,
 				BC30AC5F2B18B24900A79346 /* SignInView.swift in Sources */,
 				BC9546442B0F4FE5005C15C1 /* BlobView.swift in Sources */,
+				BC30AC672B19AC2600A79346 /* Coin.swift in Sources */,
 				BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */,
 				BC95464E2B0F687D005C15C1 /* TabItem.swift in Sources */,
+				BC30AC652B19936E00A79346 /* Adress.swift in Sources */,
 				BCFAF92F2B1741D700D29B05 /* CourseItem.swift in Sources */,
 				BC9546582B0F89C8005C15C1 /* FeaturedItem.swift in Sources */,
 				BC30AC572B18734100A79346 /* SignUpView.swift in Sources */,

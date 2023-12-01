@@ -10,8 +10,26 @@ import SwiftUI
 struct AccountView: View {
     @State var isDeleted = false
     @State var isPinned = false
+    @State var addModel: AdressModel = AdressModel(id: 1, country: "Canada")
     @Environment(\.dismiss) var dismiss
     @AppStorage("isLogged") var isLogged = false
+    @ObservedObject var coinModel  = CoinModel()
+    
+    
+    func fetchAddress() async {
+        do {
+            let url = URL(string: "https://random-data-api.com/api/address/randow_address")!
+            let (data, _) = try await URLSession.shared.data(from: url)
+            //print(String(decoding: data, as: UTF8.self))
+            addModel = try JSONDecoder().decode(AdressModel.self, from: data)
+            
+            
+        } catch {
+            //show error
+            addModel = AdressModel(id: 1, country: "Error")
+        }
+    }
+    
     
     var body: some View {
         //NavigationStack
@@ -21,6 +39,7 @@ struct AccountView: View {
                 profile
                 menu
                 links
+                coins
                 
                 Button {
                     isLogged = false
@@ -29,6 +48,14 @@ struct AccountView: View {
                     Text("Sign out")
                 }
                 .tint(.red)
+            }
+            .task {//请求
+                await fetchAddress()
+                await coinModel.fetchCoin()
+            }
+            .refreshable {//下拉刷新
+                await fetchAddress()
+                await coinModel.fetchCoin()
             }
             .listStyle(.insetGrouped)
             .navigationTitle("Account")
@@ -72,7 +99,7 @@ struct AccountView: View {
             HStack {
                 Image(systemName: "location")
                     .imageScale(.large)
-                Text("Canada")
+                Text(addModel.country)
                     .foregroundColor(.secondary)
             }
         }
@@ -143,6 +170,31 @@ struct AccountView: View {
         .accentColor(.primary)
         .listRowSeparator(.hidden)
     }
+    
+    var coins: some View {
+        Section(header: Text("Coins")) {
+            ForEach(coinModel.coins) { item in
+                HStack {
+                    AsyncImage(url: URL(string: item.logo)) { image in
+                        image.resizable()
+                            .aspectRatio(contentMode: .fit)
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    .frame(width: 32, height: 32)
+
+                    VStack (alignment: .leading, spacing: 4) {
+                        Text(item.coin_name)
+                        Text(item.acronym)
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
+        }
+    }
+    
+    
     
     //Button
     var pinButton: some View {
