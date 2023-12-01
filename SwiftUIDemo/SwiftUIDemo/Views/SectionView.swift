@@ -16,6 +16,13 @@ struct SectionView: View {
         ZStack {
             ScrollView {
                 coverView
+                    .overlay {
+                        PlayView()
+                            .overlay(
+                                CircularView(value: itemModel.progress, lineWidth: 5)
+                                    .padding(24)
+                            )
+                    }
                 
                 contentView
                     .offset(y: 120)

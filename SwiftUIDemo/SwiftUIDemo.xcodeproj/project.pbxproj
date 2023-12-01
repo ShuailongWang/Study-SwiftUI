@@ -22,6 +22,9 @@
 		BC30AC6B2B19B3C900A79346 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC6A2B19B3C900A79346 /* CourseSection.swift */; };
 		BC30AC6D2B19B4E200A79346 /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC6C2B19B4E200A79346 /* SectionRow.swift */; };
 		BC30AC6F2B19B79F00A79346 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC6E2B19B79E00A79346 /* SectionView.swift */; };
+		BC30AC712B19C53400A79346 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC702B19C53400A79346 /* PlayView.swift */; };
+		BC30AC732B19CC8E00A79346 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC722B19CC8E00A79346 /* ExploreView.swift */; };
+		BC30AC752B19CD8500A79346 /* SmallCourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC742B19CD8500A79346 /* SmallCourseItem.swift */; };
 		BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */; };
 		BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */; };
 		BC9545E52B0EFDE8005C15C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9545E42B0EFDE8005C15C1 /* Assets.xcassets */; };
@@ -60,6 +63,9 @@
 		BC30AC6A2B19B3C900A79346 /* CourseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
 		BC30AC6C2B19B4E200A79346 /* SectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
 		BC30AC6E2B19B79E00A79346 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		BC30AC702B19C53400A79346 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		BC30AC722B19CC8E00A79346 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		BC30AC742B19CD8500A79346 /* SmallCourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCourseItem.swift; sourceTree = "<group>"; };
 		BC9545DD2B0EFDE6005C15C1 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 				BCFAF9302B17437E00D29B05 /* CourseView.swift */,
 				BC30AC6E2B19B79E00A79346 /* SectionView.swift */,
 				BCFAF9362B1828A000D29B05 /* SearchView.swift */,
+				BC30AC722B19CC8E00A79346 /* ExploreView.swift */,
 				BC30AC612B18B62F00A79346 /* Modals */,
 			);
 			path = Views;
@@ -167,6 +174,8 @@
 				BC30AC622B18B9DF00A79346 /* AvatarView.swift */,
 				BC30AC682B19B1BB00A79346 /* CircularView.swift */,
 				BC30AC6C2B19B4E200A79346 /* SectionRow.swift */,
+				BC30AC702B19C53400A79346 /* PlayView.swift */,
+				BC30AC742B19CD8500A79346 /* SmallCourseItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -282,6 +291,7 @@
 				BC9546502B0F7DDA005C15C1 /* HomeView.swift in Sources */,
 				BC30AC6F2B19B79F00A79346 /* SectionView.swift in Sources */,
 				BC95464A2B0F61B8005C15C1 /* Tabbar.swift in Sources */,
+				BC30AC712B19C53400A79346 /* PlayView.swift in Sources */,
 				BCFAF9312B17437E00D29B05 /* CourseView.swift in Sources */,
 				BC2030892B107248004A830A /* AnimationFontModifier.swift in Sources */,
 				BCFAF9392B182DCD00D29B05 /* Suggestion.swift in Sources */,
@@ -291,12 +301,14 @@
 				BC9546422B0F4C94005C15C1 /* HexagonView.swift in Sources */,
 				BC9545EF2B0F2C2A005C15C1 /* Styles.swift in Sources */,
 				BC30AC592B1877E000A79346 /* AngularButtonStyle.swift in Sources */,
+				BC30AC732B19CC8E00A79346 /* ExploreView.swift in Sources */,
 				BC95465A2B0F8B4E005C15C1 /* NavigationBar.swift in Sources */,
 				BC30AC5F2B18B24900A79346 /* SignInView.swift in Sources */,
 				BC9546442B0F4FE5005C15C1 /* BlobView.swift in Sources */,
 				BC30AC692B19B1BB00A79346 /* CircularView.swift in Sources */,
 				BC30AC6B2B19B3C900A79346 /* CourseSection.swift in Sources */,
 				BC30AC672B19AC2600A79346 /* Coin.swift in Sources */,
+				BC30AC752B19CD8500A79346 /* SmallCourseItem.swift in Sources */,
 				BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */,
 				BC95464E2B0F687D005C15C1 /* TabItem.swift in Sources */,
 				BC30AC652B19936E00A79346 /* Adress.swift in Sources */,

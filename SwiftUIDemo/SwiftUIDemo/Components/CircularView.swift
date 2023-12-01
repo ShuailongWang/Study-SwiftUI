@@ -9,12 +9,13 @@ import SwiftUI
 
 struct CircularView: View {
     var value: CGFloat = 0.2    //进度
+    var lineWidth: Double = 4   //线宽
     @State var appear = false   //动画
     
     var body: some View {
         Circle()
             .trim(from: 0, to: appear ? value : 0) //起点-结束
-            .stroke(style: StrokeStyle(lineWidth: 4, lineCap: .round))//线样式
+            .stroke(style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))//线样式
             .fill(.angularGradient(
                 colors: [.purple, .pink, .purple],
                 center: .center,
