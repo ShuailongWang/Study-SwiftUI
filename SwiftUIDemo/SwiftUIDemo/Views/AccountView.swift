@@ -14,6 +14,7 @@ struct AccountView: View {
     @Environment(\.dismiss) var dismiss
     @AppStorage("isLogged") var isLogged = false
     @ObservedObject var coinModel  = CoinModel()
+    @AppStorage("isLiteMode") var isLiteMode = true
     
     
     func fetchAddress() async {
@@ -38,6 +39,14 @@ struct AccountView: View {
             List {
                 profile
                 menu
+                
+                Section {
+                    Toggle(isOn: $isLiteMode, label: {
+                        Label("Lite Mode", systemImage: isLiteMode ? "tortoise" : "hare")
+                    })
+                }
+                .accentColor(.primary)
+                
                 links
                 coins
                 
