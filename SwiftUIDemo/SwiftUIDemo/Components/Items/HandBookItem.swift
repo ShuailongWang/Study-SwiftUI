@@ -16,7 +16,7 @@ struct HandBookItem : View {
                 .fill(.black.opacity(0.2))
                 .frame(height:90)
                 .overlay {
-                    Image(itemModel.logo)
+                    Image(itemModel.image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 150, height:100)

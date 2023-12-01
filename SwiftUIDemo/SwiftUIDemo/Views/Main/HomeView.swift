@@ -134,6 +134,8 @@ struct HomeView: View {
                             showCourse = true
                             selectIndex = index
                         }
+                        .accessibilityElement(children: .combine)
+                        .accessibilityAddTraits(.isButton)
                 }
             }
         }
@@ -159,6 +161,8 @@ struct HomeView: View {
                         selectedID = item.id
                     }
                 }
+                .accessibilityElement(children: .combine)
+                .accessibilityAddTraits(.isButton)
         }
     }
     
