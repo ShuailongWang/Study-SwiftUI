@@ -13,6 +13,16 @@ struct CircularView: View {
     @State var appear = false   //动画
     
     var body: some View {
+        circularItemView
+        
+//        //虚线
+//        ProgressView(value: 0.5, total: 1)
+//            .progressViewStyle(CustomCircularProgessViewStyle())
+        
+    }
+    
+    
+    var circularItemView: some View {
         Circle()
             .trim(from: 0, to: appear ? value : 0) //起点-结束
             .stroke(style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))//线样式
@@ -36,4 +46,14 @@ struct CircularView: View {
 
 #Preview {
     CircularView()
+}
+
+struct CustomCircularProgessViewStyle: ProgressViewStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        Circle()
+            .trim(from: 0.0, to: 0.4)
+            .stroke(Color.green, style: StrokeStyle(lineWidth: 5, dash: [10, 5]))
+            .rotationEffect(.degrees(-90))
+            .frame(width: 200)
+    }
 }

@@ -29,6 +29,13 @@
 		BC30AC792B19D44600A79346 /* HandBookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC782B19D44600A79346 /* HandBookItem.swift */; };
 		BC30AC7B2B19D90B00A79346 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC7A2B19D90B00A79346 /* Topic.swift */; };
 		BC30AC7D2B19D98D00A79346 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC30AC7C2B19D98D00A79346 /* ListRow.swift */; };
+		BC4DBC1B2B19FD7200C457F6 /* SegmentTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC1A2B19FD7200C457F6 /* SegmentTabs.swift */; };
+		BC4DBC1D2B19FD9100C457F6 /* SegmentTabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC1C2B19FD9100C457F6 /* SegmentTabModel.swift */; };
+		BC4DBC1F2B1A02A500C457F6 /* SegmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC1E2B1A02A500C457F6 /* SegmentContentView.swift */; };
+		BC4DBC212B1A0D5300C457F6 /* RectRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC202B1A0D5300C457F6 /* RectRoundView.swift */; };
+		BC4DBC232B1A0F3B00C457F6 /* BarProgressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC222B1A0F3B00C457F6 /* BarProgressStyle.swift */; };
+		BC4DBC252B1D71D000C457F6 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC242B1D71D000C457F6 /* ChartView.swift */; };
+		BC4DBC272B1D733800C457F6 /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC262B1D733800C457F6 /* ChartModel.swift */; };
 		BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */; };
 		BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */; };
 		BC9545E52B0EFDE8005C15C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9545E42B0EFDE8005C15C1 /* Assets.xcassets */; };
@@ -76,6 +83,13 @@
 		BC30AC782B19D44600A79346 /* HandBookItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandBookItem.swift; sourceTree = "<group>"; };
 		BC30AC7A2B19D90B00A79346 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		BC30AC7C2B19D98D00A79346 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		BC4DBC1A2B19FD7200C457F6 /* SegmentTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTabs.swift; sourceTree = "<group>"; };
+		BC4DBC1C2B19FD9100C457F6 /* SegmentTabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTabModel.swift; sourceTree = "<group>"; };
+		BC4DBC1E2B1A02A500C457F6 /* SegmentContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentContentView.swift; sourceTree = "<group>"; };
+		BC4DBC202B1A0D5300C457F6 /* RectRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectRoundView.swift; sourceTree = "<group>"; };
+		BC4DBC222B1A0F3B00C457F6 /* BarProgressStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarProgressStyle.swift; sourceTree = "<group>"; };
+		BC4DBC242B1D71D000C457F6 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		BC4DBC262B1D733800C457F6 /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
 		BC9545DD2B0EFDE6005C15C1 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +165,15 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		BC4DBC192B19FC8000C457F6 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				BC4DBC1A2B19FD7200C457F6 /* SegmentTabs.swift */,
+				BC4DBC1E2B1A02A500C457F6 /* SegmentContentView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
 		BC9545D42B0EFDE6005C15C1 = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +227,7 @@
 		BC9546532B0F7FBE005C15C1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BC4DBC192B19FC8000C457F6 /* Tabs */,
 				BCC71C292B19DC7100D4F288 /* Graphics */,
 				BCC71C272B19DC2000D4F288 /* Items */,
 				BCC71C282B19DC5800D4F288 /* Buttons */,
@@ -223,6 +247,8 @@
 				BC30AC6A2B19B3C900A79346 /* CourseSection.swift */,
 				BC30AC762B19D31400A79346 /* Handbook.swift */,
 				BC30AC7A2B19D90B00A79346 /* Topic.swift */,
+				BC4DBC1C2B19FD9100C457F6 /* SegmentTabModel.swift */,
+				BC4DBC262B1D733800C457F6 /* ChartModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,6 +256,7 @@
 		BC9546552B0F8042005C15C1 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				BC4DBC222B1A0F3B00C457F6 /* BarProgressStyle.swift */,
 				BC9545EE2B0F2C2A005C15C1 /* Styles.swift */,
 				BC2030882B107248004A830A /* AnimationFontModifier.swift */,
 				BCFAF9322B1749C400D29B05 /* Animation.swift */,
@@ -279,6 +306,8 @@
 				BC9546432B0F4FE5005C15C1 /* BlobView.swift */,
 				BC9546412B0F4C94005C15C1 /* HexagonView.swift */,
 				BC30AC682B19B1BB00A79346 /* CircularView.swift */,
+				BC4DBC202B1A0D5300C457F6 /* RectRoundView.swift */,
+				BC4DBC242B1D71D000C457F6 /* ChartView.swift */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -371,18 +400,23 @@
 				BC30AC732B19CC8E00A79346 /* ExploreView.swift in Sources */,
 				BC95465A2B0F8B4E005C15C1 /* NavigationBar.swift in Sources */,
 				BC30AC772B19D31400A79346 /* Handbook.swift in Sources */,
+				BC4DBC232B1A0F3B00C457F6 /* BarProgressStyle.swift in Sources */,
 				BC30AC5F2B18B24900A79346 /* SignInView.swift in Sources */,
 				BC9546442B0F4FE5005C15C1 /* BlobView.swift in Sources */,
 				BCC71C2F2B19E22D00D4F288 /* CertificateView.swift in Sources */,
 				BC30AC692B19B1BB00A79346 /* CircularView.swift in Sources */,
+				BC4DBC252B1D71D000C457F6 /* ChartView.swift in Sources */,
+				BC4DBC272B1D733800C457F6 /* ChartModel.swift in Sources */,
 				BC30AC6B2B19B3C900A79346 /* CourseSection.swift in Sources */,
 				BCC71C2D2B19E1A700D4F288 /* LibraryView.swift in Sources */,
 				BC30AC672B19AC2600A79346 /* Coin.swift in Sources */,
 				BC30AC752B19CD8500A79346 /* SmallCourseItem.swift in Sources */,
 				BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */,
+				BC4DBC1F2B1A02A500C457F6 /* SegmentContentView.swift in Sources */,
 				BC95464E2B0F687D005C15C1 /* TabItem.swift in Sources */,
 				BC30AC652B19936E00A79346 /* Adress.swift in Sources */,
 				BCFAF92F2B1741D700D29B05 /* CourseItem.swift in Sources */,
+				BC4DBC212B1A0D5300C457F6 /* RectRoundView.swift in Sources */,
 				BC9546582B0F89C8005C15C1 /* FeaturedItem.swift in Sources */,
 				BC30AC572B18734100A79346 /* SignUpView.swift in Sources */,
 				BC30AC6D2B19B4E200A79346 /* SectionRow.swift in Sources */,
@@ -395,6 +429,8 @@
 				BCFAF9332B1749C400D29B05 /* Animation.swift in Sources */,
 				BC2030872B105158004A830A /* ScrollPreferenceKey.swift in Sources */,
 				BC30AC5D2B18B1DF00A79346 /* ModalView.swift in Sources */,
+				BC4DBC1B2B19FD7200C457F6 /* SegmentTabs.swift in Sources */,
+				BC4DBC1D2B19FD9100C457F6 /* SegmentTabModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
