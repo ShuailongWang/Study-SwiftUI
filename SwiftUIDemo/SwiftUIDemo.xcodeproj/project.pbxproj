@@ -36,6 +36,10 @@
 		BC4DBC232B1A0F3B00C457F6 /* BarProgressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC222B1A0F3B00C457F6 /* BarProgressStyle.swift */; };
 		BC4DBC252B1D71D000C457F6 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC242B1D71D000C457F6 /* ChartView.swift */; };
 		BC4DBC272B1D733800C457F6 /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC262B1D733800C457F6 /* ChartModel.swift */; };
+		BC4DBC2A2B1DA6DF00C457F6 /* StaggeredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC292B1DA6DF00C457F6 /* StaggeredView.swift */; };
+		BC4DBC2C2B1DA6E900C457F6 /* StaggeredGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC2B2B1DA6E900C457F6 /* StaggeredGrid.swift */; };
+		BC4DBC2E2B1DA91100C457F6 /* StaggeredItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC2D2B1DA91100C457F6 /* StaggeredItem.swift */; };
+		BC4DBC302B1DA92500C457F6 /* StaggeredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DBC2F2B1DA92500C457F6 /* StaggeredModel.swift */; };
 		BC9545E12B0EFDE6005C15C1 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */; };
 		BC9545E32B0EFDE6005C15C1 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */; };
 		BC9545E52B0EFDE8005C15C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9545E42B0EFDE8005C15C1 /* Assets.xcassets */; };
@@ -90,6 +94,10 @@
 		BC4DBC222B1A0F3B00C457F6 /* BarProgressStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarProgressStyle.swift; sourceTree = "<group>"; };
 		BC4DBC242B1D71D000C457F6 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		BC4DBC262B1D733800C457F6 /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
+		BC4DBC292B1DA6DF00C457F6 /* StaggeredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredView.swift; sourceTree = "<group>"; };
+		BC4DBC2B2B1DA6E900C457F6 /* StaggeredGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredGrid.swift; sourceTree = "<group>"; };
+		BC4DBC2D2B1DA91100C457F6 /* StaggeredItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredItem.swift; sourceTree = "<group>"; };
+		BC4DBC2F2B1DA92500C457F6 /* StaggeredModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredModel.swift; sourceTree = "<group>"; };
 		BC9545DD2B0EFDE6005C15C1 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9545E02B0EFDE6005C15C1 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		BC9545E22B0EFDE6005C15C1 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +182,16 @@
 			path = Tabs;
 			sourceTree = "<group>";
 		};
+		BC4DBC282B1DA6C000C457F6 /* Staggered */ = {
+			isa = PBXGroup;
+			children = (
+				BC4DBC292B1DA6DF00C457F6 /* StaggeredView.swift */,
+				BC4DBC2B2B1DA6E900C457F6 /* StaggeredGrid.swift */,
+				BC4DBC2D2B1DA91100C457F6 /* StaggeredItem.swift */,
+			);
+			path = Staggered;
+			sourceTree = "<group>";
+		};
 		BC9545D42B0EFDE6005C15C1 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +238,7 @@
 				BC30AC802B19DB8000A79346 /* Details */,
 				BC30AC7F2B19DB6800A79346 /* Sheets */,
 				BC30AC612B18B62F00A79346 /* Modals */,
+				BC4DBC282B1DA6C000C457F6 /* Staggered */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,6 +268,7 @@
 				BC30AC7A2B19D90B00A79346 /* Topic.swift */,
 				BC4DBC1C2B19FD9100C457F6 /* SegmentTabModel.swift */,
 				BC4DBC262B1D733800C457F6 /* ChartModel.swift */,
+				BC4DBC2F2B1DA92500C457F6 /* StaggeredModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -386,6 +406,7 @@
 				BC9546502B0F7DDA005C15C1 /* HomeView.swift in Sources */,
 				BC30AC792B19D44600A79346 /* HandBookItem.swift in Sources */,
 				BC30AC6F2B19B79F00A79346 /* SectionView.swift in Sources */,
+				BC4DBC2C2B1DA6E900C457F6 /* StaggeredGrid.swift in Sources */,
 				BC30AC7D2B19D98D00A79346 /* ListRow.swift in Sources */,
 				BC95464A2B0F61B8005C15C1 /* Tabbar.swift in Sources */,
 				BC30AC712B19C53400A79346 /* PlayView.swift in Sources */,
@@ -415,6 +436,8 @@
 				BC4DBC1F2B1A02A500C457F6 /* SegmentContentView.swift in Sources */,
 				BC95464E2B0F687D005C15C1 /* TabItem.swift in Sources */,
 				BC30AC652B19936E00A79346 /* Adress.swift in Sources */,
+				BC4DBC2A2B1DA6DF00C457F6 /* StaggeredView.swift in Sources */,
+				BC4DBC2E2B1DA91100C457F6 /* StaggeredItem.swift in Sources */,
 				BCFAF92F2B1741D700D29B05 /* CourseItem.swift in Sources */,
 				BC4DBC212B1A0D5300C457F6 /* RectRoundView.swift in Sources */,
 				BC9546582B0F89C8005C15C1 /* FeaturedItem.swift in Sources */,
@@ -426,6 +449,7 @@
 				BC30AC5B2B18882300A79346 /* InputStyle.swift in Sources */,
 				BC30AC7B2B19D90B00A79346 /* Topic.swift in Sources */,
 				BCFAF9352B175D6B00D29B05 /* Model.swift in Sources */,
+				BC4DBC302B1DA92500C457F6 /* StaggeredModel.swift in Sources */,
 				BCFAF9332B1749C400D29B05 /* Animation.swift in Sources */,
 				BC2030872B105158004A830A /* ScrollPreferenceKey.swift in Sources */,
 				BC30AC5D2B18B1DF00A79346 /* ModalView.swift in Sources */,
